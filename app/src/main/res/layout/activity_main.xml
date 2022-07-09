@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btONOFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/on_off"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@color/teal_200"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btDiscover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/enable_discoverability"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@color/teal_200"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btDiscoverDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/enable_discoverability"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@color/teal_200"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/deviceRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

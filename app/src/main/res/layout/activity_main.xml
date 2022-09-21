@@ -28,20 +28,26 @@
         android:background="@color/teal_200"
         />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btDiscoverDevices"
+        android:id="@+id/btGetPairedDevices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text = "@string/enable_discoverability"
+        android:text ="@string/get_paired_devices"
         android:textSize="30sp"
         android:layout_margin="20dp"
         android:padding="20dp"
         android:background="@color/teal_200"
         />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/deviceRecyclerView"
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btDiscoverDevices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:text ="Get Scanned Devices"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@color/teal_200"
         />
+
 
 </LinearLayout>

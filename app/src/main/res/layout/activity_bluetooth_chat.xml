@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothChat">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btBluetoothSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ON/OFF"
+        android:background="@color/teal_200"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btStartScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Start Scan"
+        android:background="@color/teal_200"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_below="@id/btBluetoothSwitch"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btShowDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/teal_200"
+        android:textColor="@color/black"
+        android:layout_below="@id/btBluetoothSwitch"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_toEndOf="@id/btStartScan"
+        android:text="Show Devices" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btStartScan"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/teal_200"
+        android:textColor="@color/black"
+        android:text="Status"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/txtStatus"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/etSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView"
+        android:ems="10"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:hint="Enter Your Message"
+        android:inputType="textPersonName"
+         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/teal_200"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_below="@id/etSendMessage"
+        />
+
+    <TextView
+        android:id="@+id/txtReceivedMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSendMessage"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Message"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

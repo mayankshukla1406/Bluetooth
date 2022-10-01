@@ -27,11 +27,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bluetooth">
-        <activity
-            android:name=".ClickListener"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+        <activity android:name=".BluetoothChat"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
